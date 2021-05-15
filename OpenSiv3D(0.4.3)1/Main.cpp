@@ -36,6 +36,8 @@ void Main()
 
     while (System::Update())
     {
+        if (MouseL.pressed()) Scene::SetBackground(Palette::Aqua);
+
         for (int i = 0; i <= 800; i++) {
             for (int j = 0; j <= 600; j++) {
                 long double x = i - centerX;
